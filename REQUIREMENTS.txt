@@ -1,0 +1,133 @@
+REQUIREMENTS
+
+To develop the comprehensive sales chatbot for an e-commerce platform as described, you'll need to break down the project into specific tasks. Here's a detailed explanation of the requirements and the actions you'll need to take to fulfill them.
+
+### 1. **User Interface / Front End**
+The front-end part of this project is where users interact with the chatbot to explore products and make purchases. The front end should be responsive, user-friendly, and work seamlessly on desktop, tablet, and mobile devices.
+
+#### Actions:
+- **Responsive Design:** Use modern JavaScript frameworks (such as React, Angular, or Vue.js) along with HTML5 and CSS for styling. The design should automatically adapt to different screen sizes (responsive design).
+- **Chatbot Interface:**
+  - Create a chatbox-like interface where users can interact with the chatbot. The interface should be simple, intuitive, and easy to use.
+  - Include features such as:
+    - **Conversation Reset:** A button to reset the chat, clearing the conversation history and allowing users to start a new session.
+    - **Session Tracking:** Display timestamps for each user message and chatbot response.
+    - **Product Presentation:** Display products fetched from the server in a clear and engaging format, including images, descriptions, and prices.
+- **Login and Authentication:**
+  - Implement a login system where users can securely log in and maintain session continuity.
+  - Use authentication methods like JWT (JSON Web Tokens) or sessions to secure user data and interactions.
+- **Session Continuity:** Track the session state to ensure users don’t lose progress when navigating the site or reloading the page.
+  - Store session data in the browser using cookies, localStorage, or sessionStorage.
+- **Data Storage for Chat Interactions:** Store all conversations and interactions to allow for analysis and retrieval later.
+  - Use a local database (like SQLite) or an in-memory store like Redis for chat data storage.
+
+### 2. **Backend**
+The backend is responsible for processing requests, fetching product data, and handling the logic of the chatbot's responses.
+
+#### Actions:
+- **API-Driven Backend:** 
+  - Use Python frameworks such as Flask or Django to build an API that processes user queries and returns relevant product data.
+  - The API should be able to handle RESTful interactions (GET requests for fetching data, POST for user actions, etc.).
+- **Product Database:**
+  - Populate a relational database (like SQLite, PostgreSQL, or MySQL) with at least **100 mock e-commerce product entries**. Each product should have attributes like:
+    - Name
+    - Description
+    - Price
+    - Category (electronics, books, etc.)
+    - Image URL (for displaying the product in the UI)
+    - Stock quantity
+- **Search Logic:** 
+  - Implement the search functionality to allow the chatbot to search for products by keyword (e.g., "laptop", "phone", etc.) or filter by category.
+  - Allow the chatbot to suggest products based on the user's query.
+- **Error Handling:** Ensure robust error handling on the backend for cases like missing data, incorrect API requests, or server issues.
+
+### 3. **Technical Documentation**
+Documentation is crucial for explaining how the project works, how to set it up, and what technologies were used.
+
+#### Actions:
+- **Process Documentation:**
+  - Explain the entire process from designing the chatbot to implementing the backend and connecting it with the front end.
+  - Discuss the architecture of the system, including:
+    - The flow of communication between the front end (chatbot) and the backend (API).
+    - How product data is fetched from the database and displayed in the chatbot.
+- **Choice of Tools/Frameworks:**
+  - Justify why you chose specific frameworks (e.g., React for the front end, Flask for the backend).
+  - Explain how these tools will help achieve project goals, focusing on scalability, performance, and ease of use.
+- **Mock Data Creation:**
+  - Include the process of creating and populating the mock product data (i.e., 100 sample product entries).
+- **Challenges & Solutions:**
+  - Describe any challenges faced during the development (e.g., designing an intuitive UI, implementing the backend logic) and how they were overcome.
+
+### 4. **Code Quality and Best Practices**
+This is an essential part of the project, as it ensures the system is maintainable, scalable, and robust.
+
+#### Actions:
+- **Clean and Readable Code:** Ensure your code is clean, readable, and follows industry standards. This includes:
+  - Proper indentation.
+  - Meaningful variable and function names.
+  - Use of comments to explain complex logic.
+- **Modular Architecture:** Break the code into small, reusable, and testable components.
+  - Use components for the front end (React components, for example).
+  - Keep backend logic modular, using services and controllers for different aspects of the application.
+- **Fault Tolerance:** Ensure that the system handles edge cases gracefully (e.g., no products found, network failures).
+  - Implement proper error handling in both the front end (handling API errors) and back end (validating user input).
+  
+### 5. **Evaluation Criteria**
+The project will be evaluated based on the following criteria:
+
+#### a. **UI User Experience:**
+  - The user interface should be visually appealing while ensuring a seamless experience for users interacting with the chatbot.
+  - The design should allow users to filter products, interact with the chatbot, and explore different products intuitively.
+
+#### b. **Technical Implementation:**
+  - The quality of your code (both front-end and back-end) is essential, including readability, structure, and modularity.
+  - Ensure your application is functional, responsive, and well-organized.
+
+#### c. **Innovation and Problem-Solving:**
+  - Showcase creativity in solving the problem. This could include innovative ways to display products, enhance chatbot conversations, or integrate advanced search and filtering features.
+
+#### d. **Documentation and Presentation:**
+  - The technical documentation should be clear, detailed, and easy to understand. It should provide information on how to set up and run the project.
+  - The presentation should concisely describe the project’s goals, technologies used, and key learnings.
+
+### 6. **Deliverables:**
+These are the items you'll need to submit as part of your project.
+
+1. **GitHub Repository:**
+   - A public GitHub repository containing all the source code for both the front end (chatbot UI) and back end (API).
+   - The repository should include a detailed `README.md` with setup instructions, dependencies, and execution steps.
+
+2. **Project Report:**
+   - A detailed report outlining the technologies used, the structure of the project, how you implemented various features, and sample queries.
+   - Discuss results obtained from sample queries, such as product search or filtering.
+
+3. **Presentation:**
+   - A presentation for a recruitment panel that covers the project’s objectives, your approach, the technologies you used, and what you learned throughout the process.
+
+---
+
+### Step-by-Step Summary:
+1. **UI Front-End:**
+   - Design responsive UI for desktop, tablet, and mobile.
+   - Create chatbot UI with conversation reset and session tracking.
+   - Implement login and session management.
+   
+2. **Backend Implementation:**
+   - Build API using Flask or Django.
+   - Create mock e-commerce database with 100 product entries.
+   - Implement search and filtering logic.
+   
+3. **Documentation:**
+   - Document architecture, tool choices, and challenges.
+   - Provide detailed setup and execution instructions.
+   
+4. **Code Quality:**
+   - Ensure clean, modular, and well-documented code.
+   - Implement error handling and fault tolerance.
+
+5. **Deliverables:**
+   - GitHub repo with source code.
+   - Detailed project report.
+   - Presentation for the panel.
+
+With these steps, you'll have a comprehensive understanding of the project requirements and how to tackle them.
